@@ -193,12 +193,12 @@ nav
 
 .mobile
     min-height: 864px
+    position: relative
     padding: 48px 0 79px 0
     background: url('../img/bg/mobile_app.png') center center/cover no-repeat
     .row
         margin-top: 32px
     &_item
-        position: relative
         width: 320px
         height: 280px
         margin: 0 auto
@@ -227,9 +227,6 @@ nav
             display: flex
             justify-content: center
             align-items: center
-            position: absolute
-            bottom: 35px
-            left: 50%
             transform: translateX(-50%)
             width: 29px
             height: 29px
@@ -260,7 +257,7 @@ nav
 
 .choice
     position: relative
-    min-height: 895px
+    min-height: 100px
     padding: 57px 0 138px 0
     background: url('../img/bg/mobile_app.png') center (center/cover) no-repeat
     &_img
@@ -281,7 +278,6 @@ nav
         height: 499px
         width: 100%
         background-color: $black
-        z-index
 
 .require
     padding: 68px 0 84px 0
@@ -338,13 +334,14 @@ nav
     .subtitle
         color: white
     .desc
-        margin-top: 500px
+        margin-top: 400px
         text-align: center
         color: #1FBAD6
         text-transform: uppercase
 
 footer
-    padding: 14px 23px 39px 23px
+    margin-top: 10px
+    padding: 0px 23px 32px 23px
     a
         &:hover
             text-decoration: none
@@ -353,21 +350,19 @@ footer
     &_divider
         width: 299px
         height: 4px
+        margin: 0 auto
         background-color: #1fbad6
     &_wrapper
-        display: flex
-        justify-content: space-between
-        align-items: flex-start
-        padding-top: 32px
+        padding-top: 10px
     &_wrapper > div
-        width: 33%
         &:nth-child(3)
             display: flex
-            justify-content: flex-end
+            align-items: center
     &_social
         width: 160px
         display: flex
         justify-content: space-between
+        margin: 0 auto
         &_item
             display: flex
             justify-content: center
@@ -409,5 +404,12 @@ footer
             margin-top: 19px
             text-transform: uppercase
             text-align: center
+    &_mobile
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        a
+            border-radius: 30px
+            margin: 5px
 .xs-visible
     display: none
